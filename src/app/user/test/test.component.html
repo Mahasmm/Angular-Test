@@ -1,0 +1,52 @@
+<p>test works!</p>
+
+<button (click)="fun('mahas')">event click</button>
+<br /><br />
+<!-- <input type="text" #box (keyup)="fun(box.value)" />
+
+<br /><br />
+<input type="text" #box1 (keydown)="fun(box1.value)" />
+
+<br /><br />
+<input
+  type="text"
+  #box2
+  (keyup.space)="fun('oooy')"
+  (keyup.enter)="fun(box2.value)"
+/>
+
+<br /><br />
+<input type="text" #box3 (keyup.space)="fun(box3.value)" />
+
+<br /><br />
+
+<h1 (mouseover)="fun('hi')">hello</h1>
+
+<h1 (mouseleave)="fun('hello')">leave</h1> -->
+
+<input type="text" (keyup)="fun1($event)" />
+<br />
+
+<input type="text" #box />
+<button (click)="fun2(box.value)">click button</button>
+
+<br /><br />
+<h3>{{ value_fun1 }}</h3>
+
+<br /><br />
+<input type="text" disabled="{{ en }}" value="{{ name }}" />
+<br /><br />
+<input type="text" [disabled]="en" [value]="name" />
+<br /><br />
+<button (click)="dis()">enable</button>
+
+<br /><br />
+
+<h2 *ngIf="en; else elseBlock">if hello</h2>
+<ng-template #elseBlock>
+  <h2>else hi</h2>
+</ng-template>
+
+<app-login></app-login>
+
+<h1>{{ data.name }}</h1>

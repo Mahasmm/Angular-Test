@@ -1,0 +1,31 @@
+<p appStyleTests>login works!</p>
+
+<form #simple="ngForm" (ngSubmit)="fun(simple.value)">
+  <input type="text" name="name" /> <br /><br />
+  <input type="number" name="num" /> <br /><br />
+  <button>Submit</button>
+</form>
+
+<br />
+
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too
+    good.
+  </ngb-alert>
+</p>
+
+<br>
+{{name}}
+
+<section>
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
